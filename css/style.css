@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: #ddd; */
+    font-family: 'Poppins', sans-serif;
+}
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --shadow-1:0 .125rem .25rem rgba(255,255,255, .075);
+    --shadow-2:0 .5rem 1rem rgba(255,255,255, .15);
+    --shadow-3:0 1rem 3rem rgba(255,255,255, .50);
+}
+
+li {
+    list-style: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+}
+.container{
+    width: 1240px;
+    margin: auto;
+}
+.arif-tab{
+    width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: var(--shadow-3);
+    border-radius: 7px;
+    padding: 20px 20px;
+}
+.arif-tab .tab-menu{
+    margin-bottom: 20px;
+}
+.arif-tab .tab-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+.arif-tab .tab-menu ul li{
+    width: 20%;
+    text-align: center;
+    display: block;
+}
+.arif-tab .tab-menu ul li a{
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #575757;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.arif-tab .tab-menu ul li a.active{
+    border-left: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 6px 6px 0 0;
+    /* background-color: #16a085; */
+    /* color: #fff; */
+}
+.arif-tab .tab-content {
+    padding: 15px 20px;
+}
+.arif-tab .tab-content .tab-content-title{
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.arif-tab .tab-content p{
+    font-size: 20px;
+    font-weight: 200;
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;}
+
+    .tab-content{
+        display: none;
+        height: 200px;
+    }
+    .tab-content.active{
+        display: block;
+    }   
